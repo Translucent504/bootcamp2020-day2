@@ -29,7 +29,10 @@ jobs:
         
     - name: Yarn Setup
       run: npm install -g yarn
-
+      
+    - name: add stupid ass yarn bin to path
+      run: export PATH="$PATH:$(yarn global bin)"
+      
     - name: Yarn Install Dependencies
       run: yarn install
 
