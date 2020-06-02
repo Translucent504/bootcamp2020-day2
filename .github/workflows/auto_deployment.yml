@@ -28,10 +28,7 @@ jobs:
         node-version: 12
         
     - name: Yarn Setup
-      run: npm install -g yarn
-      
-    - name: add stupid ass yarn bin to path
-      run: export PATH="$PATH:$(yarn global bin)"
+      run: npm install -g yarn surge
       
     - name: Yarn Install Dependencies
       run: yarn install
