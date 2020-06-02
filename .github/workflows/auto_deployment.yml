@@ -36,9 +36,6 @@ jobs:
     - name: Yarn Build
       run: yarn build
     
-    - name: Surge Setup
-      run: yarn global add surge
-    
     - name: Surge Deployment
       run: surge ./build eru-bootcamp2020-day2.surge.sh --token ${{ secrets.SURGE_TOKEN }} 
         
