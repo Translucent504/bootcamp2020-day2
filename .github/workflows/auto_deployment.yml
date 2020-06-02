@@ -28,8 +28,8 @@ jobs:
         node-version: 12
         
     - name: Yarn Setup
-      run: npm install -g yarn
-
+      run: npm install -g yarn surge
+      
     - name: Yarn Install Dependencies
       run: yarn install
 
