@@ -29,7 +29,10 @@ jobs:
         
     - name: Yarn Setup
       run: npm install -g yarn
-    
+
+    - name: Yarn Install Dependencies
+      run: yarn install
+
     - name: Yarn Build
       run: yarn build
     
