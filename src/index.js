@@ -11,7 +11,7 @@ const MediaCard = ({ title, body, ImageUrl}) => (
     <Hi />
     <h2>{title}</h2>
     <p>{body}</p>
-    <img src={ImageUrl}/>
+    <img src={ImageUrl} alt="its a damn ball"/>
     <Gate isOpen={true}/>
 	</div>
 )
