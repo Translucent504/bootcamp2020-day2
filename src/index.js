@@ -1,17 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+
+function Hi(props) {
+	return <div>Jello {props.name}!</div>;
+}
+
+const MediaCard = ({ title, body, ImageUrl}) => (
+	<div>
+	<h2>{title}</h2>
+	<p>{body}</p>
+	<img src={ImageUrl}/>
+	<Gate isOpen={true}/>
+	</div>
+)
+
+const Gate = ({isOpen}) => (
+	<div>
+		{isOpen ? "open" : "closed"}
+	</div>
+)
+
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <MediaCard title="ABDUL QYDOSS" body={<p><b>ASLAM</b> is not a MAN</p>} ImageUrl="https://www.apollosports.pk/wp-content/uploads/2018/09/CA-GOLD-TENNIS-CRICKET-BALL-2.jpg"/>,
   document.getElementById('root')
 );
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
