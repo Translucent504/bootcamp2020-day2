@@ -8,10 +8,11 @@ function Hi(props) {
 
 const MediaCard = ({ title, body, ImageUrl}) => (
 	<div>
-	<h2>{title}</h2>
-	<p>{body}</p>
-	<img src={ImageUrl}/>
-	<Gate isOpen={true}/>
+    <Hi />
+    <h2>{title}</h2>
+    <p>{body}</p>
+    <img src={ImageUrl}/>
+    <Gate isOpen={true}/>
 	</div>
 )
 
@@ -20,7 +21,6 @@ const Gate = ({isOpen}) => (
 		{isOpen ? "open" : "closed"}
 	</div>
 )
-
 
 
 ReactDOM.render(
