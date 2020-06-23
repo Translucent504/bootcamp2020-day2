@@ -9,7 +9,7 @@ function Hi(props) {
 const MediaCard = ({ title, body, ImageUrl}) => (
 	<div>
     <Hi />
-	<h1>process.env.REACT_APP_SECRET1</h1>
+	<h1>{process.env.REACT_APP_SECRET1}</h1>
     <h2>{title}</h2>
     <p>{body}</p>
     <img src={ImageUrl} alt="its a damn ball"/>
