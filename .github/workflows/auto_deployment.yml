@@ -35,6 +35,8 @@ jobs:
 
     - name: Yarn Build
       run: yarn build
+      env:
+        REACT_APP_SECRET1: LOLOLOLOLOL
     
     - name: Surge Deployment
       run: surge ./build eru-bootcamp2020-day2.surge.sh --token ${{ secrets.SURGE_TOKEN }} 
